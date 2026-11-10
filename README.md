@@ -5,7 +5,7 @@ The Totative starting point for a new repository: secret-scanning hooks, Dependa
 ## After you create a repository from this
 
 1. Run `lefthook install`.
-2. Add the repository's languages to the matrix in `.github/workflows/codeql.yml`.
+2. Add the repository's languages to the matrix in `.github/workflows/codeql.yml`, and its package ecosystems to `.github/dependabot.yml`.
 3. Replace this README.
 4. If the repository goes public, an org owner adds the `default-branch` ruleset.
 5. Cut the first release with `git tag -s vX.Y.Z && git push origin vX.Y.Z`.
