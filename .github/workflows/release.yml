@@ -5,7 +5,7 @@ on:
 permissions: {}
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   # The build, attestations and release run in the org's reusable workflow, so the provenance is signed by that file
   # and nothing in this repository's workflow can touch the build (SLSA v1 Build Level 3).
