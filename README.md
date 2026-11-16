@@ -1,14 +1,41 @@
-# repo-template
+<h1 align="center">repo-template</h1>
 
-The Totative starting point for a new repository: secret-scanning hooks, Dependabot, CodeQL, dependency review, Scorecard and an attested release workflow.
+<div align="center">
 
-## After you create a repository from this
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+[![CodeQL](https://github.com/Totative/repo-template/actions/workflows/codeql.yml/badge.svg)](https://github.com/Totative/repo-template/actions/workflows/codeql.yml)
+[![OpenSSF Scorecard](https://github.com/Totative/repo-template/actions/workflows/scorecard.yml/badge.svg)](https://github.com/Totative/repo-template/actions/workflows/scorecard.yml)
 
-1. Run `lefthook install`.
-2. Add the repository's languages to the matrix in `.github/workflows/codeql.yml`, and its package ecosystems to `.github/dependabot.yml`.
-3. Replace this README.
-4. If the repository goes public, an org owner adds the `default-branch` ruleset.
-5. Cut the first release with `git tag -s vX.Y.Z && git push origin vX.Y.Z`.
-6. Anyone can verify a release with `gh attestation verify <file> --owner Totative`.
+</div>
 
-The `LICENSE` is Apache-2.0. `SECURITY.md` and `CONTRIBUTING.md` come from the org defaults, so the template has neither.
+---
+
+GitHub template for a new Totative repository. Create the repo from this template, then follow Quick start so lefthook, Dependabot, CodeQL, dependency review, Scorecard, and the attested `v*` release workflow are in place before you write project docs.
+
+This file is the checklist. Replace it once the new repository has its own description. Org-level `SECURITY.md` and `CONTRIBUTING.md` apply, so neither file lives here.
+
+## Quick start
+
+```sh
+lefthook install
+```
+
+[HUMANS.md](HUMANS.md)
+
+## Highlights
+
+- Lefthook plus gitleaks on commit
+- Dependabot, CodeQL, dependency-review, and Scorecard workflows
+- Attested source release from a signed `v*` tag
+
+## Documentation
+
+| Document | What it covers |
+| -------- | -------------- |
+| [HUMANS.md](HUMANS.md) | Checklist after you create a repository from this template |
+| [AGENTS.md](AGENTS.md) | Layout, gate, and invariants for this template |
+| [LICENSE](LICENSE) | Apache-2.0 |
+
+## License
+
+Apache-2.0. See [LICENSE](LICENSE).
