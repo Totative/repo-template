@@ -3,7 +3,24 @@
 		"default": true,
 		"MD013": false,
 		// Profile READMEs use HTML for centred layout, tables and a theme-aware <picture> wordmark.
-		"MD033": { "allowed_elements": ["p", "a", "b", "i", "br", "sub", "table", "tr", "td", "picture", "source", "img"] },
+		"MD033": {
+			"allowed_elements": [
+				"p",
+				"a",
+				"b",
+				"i",
+				"br",
+				"sub",
+				"table",
+				"tr",
+				"td",
+				"picture",
+				"source",
+				"img",
+				"h1",
+				"div"
+			]
+		},
 		"MD041": false
 	}
 }
