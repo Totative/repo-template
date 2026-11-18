@@ -1,2 +1,3 @@
 [deviations]
 patterns-release-00001 = "Release is created by the org reusable workflow (Totative/.github release-source.yml) so provenance is signed by that file (SLSA Build L3). A uses: job cannot include actions/checkout; the called workflow fetches the tag and publishes the GitHub Release."
+patterns-release-00003 = "The org reusable workflow attests and publishes in one job, so the caller must grant contents: write with id-token and attestations. Splitting those scopes would require a reusable workflow this repository does not own."
