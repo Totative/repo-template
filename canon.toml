@@ -1,0 +1,2 @@
+[deviations]
+patterns-release-00001 = "Release is created by the org reusable workflow (Totative/.github release-source.yml) so provenance is signed by that file (SLSA Build L3). A uses: job cannot include actions/checkout; the called workflow fetches the tag and publishes the GitHub Release."
